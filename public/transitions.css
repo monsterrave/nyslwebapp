@@ -1,5 +1,7 @@
 #pages > div {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s;
   position: absolute;
   top:0;
   left:0;
@@ -7,7 +9,8 @@
 }
 
 #pages > div.current {
-  display: block;
+  visibility: visible;
+  opacity: 1;
 }
 
 #pages {
