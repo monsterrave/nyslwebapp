@@ -1,0 +1,144 @@
+.btn {
+	min-width: 70%;
+	margin: 5% 15%;
+	/*font-size: 20em;*/
+	padding: 5%;
+	color:#033949;
+	border:2px solid #033949;
+
+}
+
+body {
+	/*min-width: 767px;*/
+
+	-webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+
+    background-color: silver;
+    font-family: 'Saira', sans-serif;
+}
+/*
+@media (min-width: 769px) and (max-width: 992px) {
+  .btn-responsive {
+    padding:40px 9px;
+    font-size:90%;
+    line-height: 1.2;
+    min-height:18%;
+  }
+}*/
+
+h1 {
+	margin: 5% 5%;
+	color: #033949;
+}
+/*
+header {
+	min-height: 25%;
+	border-style: solid;
+}*/
+
+footer img {
+	width: 25%;
+	display: block;
+	margin: auto auto;
+}
+
+div.collapse {
+	background-color: #a3ff15;
+	max-width: 70%;
+	border: 2px none #a3ff15;
+    border-radius: 5px;
+}
+
+a {
+	color:#033949;
+}
+ 
+button {
+	/*color:#033949;
+	border:2px solid #033949;*/
+}
+
+.navbar {
+    background-color: #7ae116;
+    border-color: #e7e7e7;
+    border-right-width:2px;
+}
+
+.navbar-header img {
+	width:40%;
+	float:right;
+	margin: 5%;
+}
+
+
+div.navbar-header {
+	border-bottom-style: solid;
+	border-bottom-color: #033949;
+	border-bottom-width: 5px;
+}
+
+/*.fa-map-marker {
+	float:left;
+}*/
+
+/*.fa-envelope-o {
+	margin: 0 5%;
+	float:left;
+}*/
+
+nav .row a.col-xs-11 {
+	float: none;
+}
+
+nav  .row i.col-xs-1 {
+	margin-right: 5%;
+	float: none;
+	text-align: center;
+}
+
+nav .nav>li {
+	font-weight: 700;
+	padding: 5% 0;
+	font-size:22px;
+	margin: 5% 0 5% -5%;
+}
+
+nav div.container-fluid div.navbar-header a.navbar-brand {
+	font-size:30px;
+}
+
+/*@media (min-width: 768px) {
+  .btn-responsive {
+    padding:20px 4px;
+    font-size:80%;
+    line-height: 1;
+    min-height: 15%;
+  }
+  
+}*/
+
+@media only screen and (min-width : 768px) {
+	nav.navbar .row a.col-xs-11 {
+  		width:20%;
+  		margin: 0 20%;
+    }
+    .btn {
+    min-width: 70%;
+    margin: 5% auto;
+    padding: 5%;
+    color: #033949;
+    border: 2px solid #033949;
+    font-size: 2em;
+	}
+	nav .nav>li {
+    font-weight: 700;
+    /* padding: 5% 0; */
+    font-size: 22px;
+    /* margin: 5% 0 5% -5%; */
+    font-size: 2em;
+	}
+}
+
+

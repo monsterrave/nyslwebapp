@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" charset="utf-8" />
+    <title>NYSL game schedule web app</title>
+    <link rel="stylesheet" href="/bootstrap-3.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/bower_components/bootstrap-offcanvas/dist/css/bootstrap.offcanvas.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Saira" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="transitions.css">
+    <link rel="shortcut icon" sizes="196x196" href="/images/nysl_logo.png">
+</head>
+
+<body class="body-offcanvas">
+    <header class="clearfix">
+        <button type="button" class="navbar-toggle offcanvas-toggle" data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <nav class="navbar navbar-default navbar-offcanvas navbar-offcanvas-touch" role="navigation" id="js-bootstrap-offcanvas">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#page-index">NYSL</a>
+                    <img src="/images/nysl_logo.png">
+                </div>
+                <div>
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <div class="row">
+                                <a class="col-xs-11" href="#page-schedule">
+                                    <i class="fa fa-calendar col-xs-1" aria-hidden="true"></i>Game Schedule
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <a class="col-xs-11" href="#page-locations">
+                                    <i class="fa fa-map-marker col-xs-1" aria-hidden="true"></i>Locations
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <a class="col-xs-11" href="#">
+                                    <i class="fa fa-futbol-o col-xs-1" aria-hidden="true"></i>Teams
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <a class="col-xs-11" href="#page-registration">
+                                    <i class="fa fa-id-card col-xs-1" aria-hidden="true"></i>Registration
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
+                                <a class="col-xs-11" href="#page-contact">
+                                    <i class="fa fa-envelope-o col-xs-1" aria-hidden="true"></i>Contact
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id="pages">
+        <div id="page-index" class="current">
+            <h1 class="text-center">Northern Youth Soccer League</h1>
+            <div class="container-fluid">
+                <div class="row">
+                    <button type="button" class="btn btn-secondary col-sm-12 text-center"><a href="#page-schedule">Game Schedule</a></button>
+                    <button type="button" class="btn btn-secondary col-sm-12"><a href="#page-locations">Locations</a></button>
+                    <button type="button" class="btn btn-secondary col-sm-12">Teams</button>
+                    <button type="button" class="btn btn-secondary col-sm-12"><a href="#page-registration">Registration</a></button>
+                    <button type="button" class="btn btn-secondary col-sm-12"><a href="#page-contact">Contact</a></button>
+                </div>
+            </div>
+        </div>
+        <div id="page-schedule">
+            <h1 class="text-center">Upcoming Games</h1>
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="panel-heading">
+                                <button data-toggle="collapse" data-parent="#accordion" data-target="#game1" type="button" class="btn btn-secondary col-sm-12 text-center">Games on Sep 01</button>
+                            </div>
+                            <div id="game1" class="panel-collapse container-fluid text-center collapse">
+                                <div class="row panel-body">
+                                    <div class="col-sm-6">
+                                        <p>U1 vs U4</br>
+                                            AJ Katzenmaier Elementary </br>
+                                            09:30 a.m.
+                                            <br>
+                                            <a href="https://goo.gl/maps/KPsjT2NkHcS2" target="_blank">
+                            <img src="/images/mapsicon.png" alt="Google Maps Icon" style="width:20px;height:20px"> </a>
+                                        </p>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <p>U3 vs U2
+                                            <br> Greenbay Elementary
+                                            <br> 1:00 p.m.
+                                            <br>
+                                            <a href="https://goo.gl/maps/6rZhXzu6J9E2" target="_blank">
+                            <img src="/images/mapsicon.png" alt="Google Maps Icon" style="width:20px;height:20px"> </a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="panel-heading">
+                                <button data-toggle="collapse" data-parent="#accordion" data-target="#game2" type="button" class="btn btn-secondary col-sm-12">Games on Sep 08</button>
+                            </div>
+                            <div id="game2" class="panel-collapse container-fluid text-center collapse">
+                                <div class="row panel-body">
+                                    <div class="col-sm-6">
+                                        <p>U5 vs U6</br>
+                                            Howard A Yeager Elementary </br>
+                                            09:30 a.m.
+                                            <br>
+                                            <a href="https://goo.gl/maps/UJ7JMoqDwQx" target="_blank">
+                            <img src="/images/mapsicon.png" alt="Google Maps Icon" style="width:20px;height:20px"> </a>
+                                        </p>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <p>U6 vs U1
+                                            <br> Marjorie P Hart Elementary
+                                            <br> 1:00 p.m.
+                                            <br>
+                                            <a href="https://goo.gl/maps/RUAAJQoYBVU2" target="_blank">
+                            <img src="/images/mapsicon.png" alt="Google Maps Icon" style="width:20px;height:20px"> </a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="panel-heading">
+                                <button data-toggle="collapse" data-parent="#accordion" data-target="#game3" type="button" class="btn btn-secondary col-sm-12">Games on Sep 15</button>
+                            </div>
+                            <div id="game3" class="panel-collapse container-fluid text-center collapse">
+                                <div class="row panel-body">
+                                    <div class="col-sm-6">
+                                        <p>U2 vs U4</br>
+                                            North Elementary </br>
+                                            09:30 a.m.
+                                            <br>
+                                            <a href="https://goo.gl/maps/N7K5BggmSPD2" target="_blank">
+                            <img src="/images/mapsicon.png" alt="Google Maps Icon" style="width:20px;height:20px"> </a>
+                                        </p>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <p>U3 vs U5
+                                            <br> AJ Katzenmaier Elementary
+                                            <br> 1:00 p.m.
+                                            <br>
+                                            <a href="https://goo.gl/maps/KPsjT2NkHcS2" target="_blank">
+                            <img src="/images/mapsicon.png" alt="Google Maps Icon" style="width:20px;height:20px"> </a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="panel-heading">
+                                <button data-toggle="collapse" data-parent="#accordion" data-target="#game4" type="button" class="btn btn-secondary col-sm-12">Games on Sep 22</button>
+                            </div>
+                            <div id="game4" class="panel-collapse container-fluid text-center collapse">
+                                <div class="row panel-body">
+                                    <div class="col-sm-6">
+                                        <p>U1 vs U3</br>
+                                            South Elementary </br>
+                                            09:30 a.m.
+                                            <br>
+                                            <a href="https://goo.gl/maps/8xXK8Sifr4R2" target="_blank">
+                            <img src="/images/mapsicon.png" alt="Google Maps Icon" style="width:20px;height:20px"> </a>
+                                        </p>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <p>U2 vs U6
+                                            <br> Howard A Yeager Elementary
+                                            <br> 1:00 p.m.
+                                            <br>
+                                            <a href="https://goo.gl/maps/UJ7JMoqDwQx" target="_blank">
+                            <img src="/images/mapsicon.png" alt="Google Maps Icon" style="width:20px;height:20px"> </a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="page-locations">
+            <h1 class="text-center">Locations</h1>
+            <div class="container-fluid">
+                <div class="row">
+                    <button type="button" class="btn btn-secondary col-sm-12 text-center"><a href="https://goo.gl/maps/KPsjT2NkHcS2" target="_blank">AJ Katzenmaier Elementary</a></button>
+                    <button type="button" class="btn btn-secondary col-sm-12"><a href="https://goo.gl/maps/6rZhXzu6J9E2" target="_blank">Greenbay Elementary</a></button>
+                    <button type="button" class="btn btn-secondary col-sm-12"><a href="https://goo.gl/maps/UJ7JMoqDwQx" target="_blank">Howard A Yeager Elementary</a></button>
+                    <button type="button" class="btn btn-secondary col-sm-12"><a href="https://goo.gl/maps/RUAAJQoYBVU2" target="_blank">Marjorie P Hart Elementary</a></button>
+                    <button type="button" class="btn btn-secondary col-sm-12"><a href="https://goo.gl/maps/N7K5BggmSPD2" target="_blank">North Elementary</a></button>
+                    <button type="button" class="btn btn-secondary col-sm-12"><a href="https://goo.gl/maps/8xXK8Sifr4R2" target="_blank">South Elementary</a></button>
+                </div>
+            </div>
+        </div>
+        <div id="page-teams">
+        </div>
+        <div id="page-registration">
+            <h1 class="text-center">Registration Form</h1>
+            <div class="container-fluid">
+                <div class="row">
+                    <form>
+                        <div class="form-group">
+                            <label for="email">Player´s Name:</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Address:</label>
+                            <input type="password" class="form-control" id="pwd">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">City/ZIP:</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">DOB:</label>
+                            <input type="password" class="form-control" id="pwd">
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Parent/Guardian:</label>
+                            <input type="password" class="form-control" id="pwd">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Fon:</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Email:</label>
+                            <input type="password" class="form-control" id="pwd">
+                        </div>
+                        <fieldset>
+                            <legend>Gender:</legend>
+                            <label for="female">Female</label>
+                            <input type="radio" name="gender" id="female" value="female" />
+                            <label for="male">Male</label>
+                            <input type="radio" name="gender" id="male" value="male" />
+                        </fieldset>
+                        <fieldset>
+                            <legend>Grade:</legend>
+                            <label for="pre_school">Pre-School</label>
+                            <input type="radio" name="grade" id="pre_school" value="pre_school" />
+                            <label for="1st">1st</label>
+                            <input type="radio" name="grade" id="1st" value="1st" />
+                            <label for="2nd">2nd</label>
+                            <input type="radio" name="grade" id="2nd" value="2nd" />
+                            <label for="3rd">3rd</label>
+                            <input type="radio" name="grade" id="3rd" value="3rd" />
+                            <label for="4th">4th</label>
+                            <input type="radio" name="grade" id="4th" value="4th" />
+                            <label for="5th">5th</label>
+                            <input type="radio" name="grade" id="5th" value="5th" />
+                        </fieldset>
+                        <fieldset>
+                            <legend>Which elementary schools do you live near?</legend>
+                            <label for="school_1" class="impinfo">First Closest School:</label>
+                            <select name="school_1" id="school_1">
+                                <option value="katzenmaier">AJ Katzenmaier</option>
+                                <option value="greenbay">Greenbay</option>
+                                <option value="yeager">Howard A Yeager</option>
+                                <option value="hart">Marjorie P Hart</option>
+                                <option value="north">North Elementary</option>
+                                <option value="south">South Elementary</option>
+                            </select>
+                            <label for="school_2" class="impinfo">Second Closest School:</label>
+                            <select name="school_2" id="school_2">
+                                <option value="katzenmaier">AJ Katzenmaier</option>
+                                <option value="greenbay">Greenbay</option>
+                                <option value="yeager">Howard A Yeager</option>
+                                <option value="hart">Marjorie P Hart</option>
+                                <option value="north">North Elementary</option>
+                                <option value="south">South Elementary</option>
+                            </select>
+                        </fieldset>
+                        <fieldset>
+                            <legend>What position(s) do you normally play? <span class="note">(check all that apply)</span></legend>
+                            <label for="n_forward">Forward</label>
+                            <input type="checkbox" name="normal_position" id="n_forward" value="n_forward" />
+                            <label for="n_defense">Defense</label>
+                            <input type="checkbox" name="normal_position" id="n_defense" value="n_defense" />
+                            <label for="n_midfield">Midfield</label>
+                            <input type="checkbox" name="normal_position" id="n_midfield" value="n_midfield" />
+                            <label for="n_goalkeeper">Goalkeeper</label>
+                            <input type="checkbox" name="normal_position" id="n_goalkeeper" value="n_goalkeeper" />
+                        </fieldset>
+                        <fieldset>
+                            <legend>What position(s) do you want to play? <span class="note">(check all that apply)</span></legend>
+                            <label for="w_forward">Forward</label>
+                            <input type="checkbox" name="want_position" id="w_forward" value="w_forward" />
+                            <label for="w_defense">Defense</label>
+                            <input type="checkbox" name="want_position" id="w_defense" value="w_defense" />
+                            <label for="w_midfield">Midfield</label>
+                            <input type="checkbox" name="want_position" id="w_midfield" value="w_midfield" />
+                            <label for="w_goalkeeper">Goalkeeper</label>
+                            <input type="checkbox" name="want_position" id="w_goalkeeper" value="w_goalkeeper" />
+                        </fieldset>
+                        <label for="uniform" class="impinfo">Already Have a Uniform</label>
+                        <input type="checkbox" name="uniform" id="uniform" />
+                        <fieldset>
+                            <legend>Jersey Size:</legend>
+                            <span class="uniformchoice">
+          <label for="j_y_small">Youth Small</label>
+          <input type="radio" name="jersey_size" id="j_y_small" value="j_y_small"/>
+          <label for="j_y_medium">Youth Medium</label>
+          <input type="radio" name="jersey_size" id="j_y_medium" value="j_y_medium"/>
+          <label for="j_y_large">Youth Large</label>
+          <input type="radio" name="jersey_size" id="j_y_large" value="j_y_large"/>
+          <label for="j_small">Small</label>
+          <input type="radio" name="jersey_size" id="j_small" value="j_small"/>
+          <label for="j_medium">Medium</label>
+          <input type="radio" name="jersey_size" id="j_medium" value="j_medium"/>
+          <label for="j_large">Large</label>
+          <input type="radio" name="jersey_size" id="j_large" value="j_large"/>
+          <label for="j_x_large">Extra-Large</label>
+          <input type="radio" name="jersey_size" id="j_x_large" value="j_x_large"/>
+        </span>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Shorts Size:</legend>
+                            <span class="uniformchoice">
+          <label for="s_y_small">Youth Small</label>
+          <input type="radio" name="shorts_size" id="s_y_small" value="s_y_small"/>
+          <label for="s_y_medium">Youth Medium</label>
+          <input type="radio" name="shorts_size" id="s_y_medium" value="s_y_medium"/>
+          <label for="s_y_large">Youth Large</label>
+          <input type="radio" name="shorts_size" id="s_y_large" value="s_y_large"/>
+          <label for="s_small">Small</label>
+          <input type="radio" name="shorts_size" id="s_small" value="s_small"/>
+          <label for="s_medium">Medium</label>
+          <input type="radio" name="shorts_size" id="s_medium" value="s_medium"/>
+          <label for="s_large">Large</label>
+          <input type="radio" name="shorts_size" id="s_large" value="s_large"/>
+          <label for="s_x_large">Extra-Large</label>
+          <input type="radio" name="shorts_size" id="s_x_large" value="s_x_large"/>
+        </span>
+                        </fieldset>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="page-contact">
+        </div>
+    </div>
+    <footer>
+        <img src="/images/nysl_logo.png" class="text-center">
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js "></script>
+    <script type="text/javascript" src="/bower_components/bootstrap-offcanvas/dist/js/bootstrap.offcanvas.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyD9y9IWJ6baMhkKEZHsd470nZZVweklxB4",
+        authDomain: "nysl-game-schedule-web-app.firebaseapp.com",
+        databaseURL: "https://nysl-game-schedule-web-app.firebaseio.com",
+        projectId: "nysl-game-schedule-web-app",
+        storageBucket: "nysl-game-schedule-web-app.appspot.com",
+        messagingSenderId: "1009239633275"
+    };
+    firebase.initializeApp(config);
+    </script>
+    <script type="text/javascript" src="scripts/transitions.js"></script>
+</body>
+
+</html>

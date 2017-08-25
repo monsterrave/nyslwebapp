@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewpoint" content="width=device-width, initial-scal=1, shrink-to-fit=no" charset="utf-8" />
+    <title>NYSL game schedule web app</title>
+    <link href="#" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="container">
+        <ul>
+            <li><button type="button" class="btn btn-primary">Your Next Game</button></li>
+            <li><button type="button" class="btn btn-secondary">Game Schedule</button></li>
+            <li><button type="button" class="btn btn-secondary">Registration</button></li>
+            <li><button type="button" class="btn btn-secondary">Teams</button></li>
+            <li><button type="button" class="btn btn-secondary">Locations</button></li>
+        </ul>
+    </div>
+    <link rel="stylesheet " href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css ">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js "></script>
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-app.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyD9y9IWJ6baMhkKEZHsd470nZZVweklxB4",
+    authDomain: "nysl-game-schedule-web-app.firebaseapp.com",
+    databaseURL: "https://nysl-game-schedule-web-app.firebaseio.com",
+    projectId: "nysl-game-schedule-web-app",
+    storageBucket: "nysl-game-schedule-web-app.appspot.com",
+    messagingSenderId: "1009239633275"
+  };
+  firebase.initializeApp(config);
+</script>
+
+</body>
+
+</html>
