@@ -36,7 +36,7 @@ var TeamNotes = (function() {
   function showInputForm() {
     // Use a CSS class "logged-in" on BODY to determine which input form to show. 
     // Call the jQuery [toggleClass](https://api.jquery.com/toggleClass/) function to add "logged-in" if user is defined.
-    $("body").toggleClass("logged-in", model.user != null);    
+    $("div").toggleClass("logged-in", model.user != null);    
   }
   
   //## showNotes()
@@ -118,7 +118,7 @@ var TeamNotes = (function() {
     // - fbRef.child("notes") says to store the data under the notes key.
     // - .push(text) says to generate a unique subkey to label this note.
     if (model.user) {
-      fbRef.child("notes").push({uid: model.user.uid, author: model.user.author, text: text});
+      firebase.database().ref("data").child('notes').push({author: model.user.email, text: text});
     }
   }
   
@@ -133,7 +133,7 @@ var TeamNotes = (function() {
         setModel("user", null);
       }
       else {showNotes();
-        $("#post-form").css("display","block");
+        
         };
     });
   }
@@ -178,9 +178,15 @@ var TeamNotes = (function() {
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     console.log(user);
+    setModel("user", user);
+    $("#post-form").show();
+    $("#login-form").hide();
     showNotes();
   } else {
     // No user is signed in.
+    setModel("user", null);
+    $("#post-form").hide();
+    $("#login-form").show();
   }
 });
   
@@ -191,7 +197,7 @@ firebase.auth().onAuthStateChanged(function(user) {
   // When new child is added, call addLocalNote with the new note.
   // On startup, Firebase will call this for the 20 existing notes first. 
 
-  var ref = firebase.database().ref("notes");
+  var ref = firebase.database().ref("data").child('notes')
   ref.orderByKey().limitToLast(20).on("child_added", function(childSnap, prevKey) {
     addLocalNote(childSnap.val());
   });
