@@ -1,0 +1,4 @@
+
+#post-form { display: none; }
+.logged-in #post-form { display: block; }
+.logged-in #login-form { display: none; }

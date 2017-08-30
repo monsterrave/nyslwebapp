@@ -121,8 +121,8 @@ nav div.container-fluid div.navbar-header a.navbar-brand {
 
 @media only screen and (min-width : 768px) {
 	nav.navbar .row a.col-xs-11 {
-  		width:20%;
-  		margin: 0 20%;
+  		width:30%;
+  		margin: 0 10%;
     }
     .btn {
     min-width: 70%;

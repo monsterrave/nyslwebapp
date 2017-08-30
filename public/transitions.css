@@ -6,11 +6,13 @@
   top:0;
   left:0;
   width:100%;
+  height:0%;
 }
 
 #pages > div.current {
   visibility: visible;
   opacity: 1;
+  height: 100%;
 }
 
 #pages {

@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="/font-awesome-4.7.0/css/font-awesome.min.css">
     <link href="styles.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="transitions.css">
+    <link rel="stylesheet" type="text/css" href="notesstyle.css">
     <link rel="shortcut icon" sizes="196x196" href="/images/nysl_logo.png">
 </head>
 
@@ -59,6 +60,13 @@
                         </li>
                         <li>
                             <div class="row">
+                                <a class="col-xs-11" href="#page-message">
+                                    <i class="fa fa-envelope-o col-xs-1" aria-hidden="true"></i>Message Board
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row">
                                 <a class="col-xs-11" href="#page-contact">
                                     <i class="fa fa-envelope-o col-xs-1" aria-hidden="true"></i>Contact
                                 </a>
@@ -78,9 +86,13 @@
                     <button type="button" class="btn btn-secondary col-sm-12"><a href="#page-locations">Locations</a></button>
                     <button type="button" class="btn btn-secondary col-sm-12">Teams</button>
                     <button type="button" class="btn btn-secondary col-sm-12"><a href="#page-registration">Registration</a></button>
+                    <button type="button" class="btn btn-secondary col-sm-12"><a href="#page-message">Message Board</a></button>
                     <button type="button" class="btn btn-secondary col-sm-12"><a href="#page-contact">Contact</a></button>
                 </div>
             </div>
+            <footer>
+                <img src="/images/nysl_logo.png" class="text-center">
+            </footer>
         </div>
         <div id="page-schedule">
             <h1 class="text-center">Upcoming Games</h1>
@@ -210,6 +222,9 @@
                     </div>
                 </div>
             </div>
+            <footer>
+                <img src="/images/nysl_logo.png" class="text-center">
+            </footer>
         </div>
         <div id="page-locations">
             <h1 class="text-center">Locations</h1>
@@ -223,8 +238,14 @@
                     <button type="button" class="btn btn-secondary col-sm-12"><a href="https://goo.gl/maps/8xXK8Sifr4R2" target="_blank">South Elementary</a></button>
                 </div>
             </div>
+            <footer>
+                <img src="/images/nysl_logo.png" class="text-center">
+            </footer>
         </div>
         <div id="page-teams">
+            <footer>
+                <img src="/images/nysl_logo.png" class="text-center">
+            </footer>
         </div>
         <div id="page-registration">
             <h1 class="text-center">Registration Form</h1>
@@ -329,69 +350,110 @@
                         <fieldset>
                             <legend>Jersey Size:</legend>
                             <span class="uniformchoice">
-          <label for="j_y_small">Youth Small</label>
-          <input type="radio" name="jersey_size" id="j_y_small" value="j_y_small"/>
-          <label for="j_y_medium">Youth Medium</label>
-          <input type="radio" name="jersey_size" id="j_y_medium" value="j_y_medium"/>
-          <label for="j_y_large">Youth Large</label>
-          <input type="radio" name="jersey_size" id="j_y_large" value="j_y_large"/>
-          <label for="j_small">Small</label>
-          <input type="radio" name="jersey_size" id="j_small" value="j_small"/>
-          <label for="j_medium">Medium</label>
-          <input type="radio" name="jersey_size" id="j_medium" value="j_medium"/>
-          <label for="j_large">Large</label>
-          <input type="radio" name="jersey_size" id="j_large" value="j_large"/>
-          <label for="j_x_large">Extra-Large</label>
-          <input type="radio" name="jersey_size" id="j_x_large" value="j_x_large"/>
-        </span>
+                                <label for="j_y_small">Youth Small</label>
+                                <input type="radio" name="jersey_size" id="j_y_small" value="j_y_small"/>
+                                <label for="j_y_medium">Youth Medium</label>
+                                <input type="radio" name="jersey_size" id="j_y_medium" value="j_y_medium"/>
+                                <label for="j_y_large">Youth Large</label>
+                                <input type="radio" name="jersey_size" id="j_y_large" value="j_y_large"/>
+                                <label for="j_small">Small</label>
+                                <input type="radio" name="jersey_size" id="j_small" value="j_small"/>
+                                <label for="j_medium">Medium</label>
+                                <input type="radio" name="jersey_size" id="j_medium" value="j_medium"/>
+                                <label for="j_large">Large</label>
+                                <input type="radio" name="jersey_size" id="j_large" value="j_large"/>
+                                <label for="j_x_large">Extra-Large</label>
+                                <input type="radio" name="jersey_size" id="j_x_large" value="j_x_large"/>
+                            </span>
                         </fieldset>
                         <fieldset>
                             <legend>Shorts Size:</legend>
                             <span class="uniformchoice">
-          <label for="s_y_small">Youth Small</label>
-          <input type="radio" name="shorts_size" id="s_y_small" value="s_y_small"/>
-          <label for="s_y_medium">Youth Medium</label>
-          <input type="radio" name="shorts_size" id="s_y_medium" value="s_y_medium"/>
-          <label for="s_y_large">Youth Large</label>
-          <input type="radio" name="shorts_size" id="s_y_large" value="s_y_large"/>
-          <label for="s_small">Small</label>
-          <input type="radio" name="shorts_size" id="s_small" value="s_small"/>
-          <label for="s_medium">Medium</label>
-          <input type="radio" name="shorts_size" id="s_medium" value="s_medium"/>
-          <label for="s_large">Large</label>
-          <input type="radio" name="shorts_size" id="s_large" value="s_large"/>
-          <label for="s_x_large">Extra-Large</label>
-          <input type="radio" name="shorts_size" id="s_x_large" value="s_x_large"/>
-        </span>
+                                <label for="s_y_small">Youth Small</label>
+                                <input type="radio" name="shorts_size" id="s_y_small" value="s_y_small"/>
+                                <label for="s_y_medium">Youth Medium</label>
+                                <input type="radio" name="shorts_size" id="s_y_medium" value="s_y_medium"/>
+                                <label for="s_y_large">Youth Large</label>
+                                <input type="radio" name="shorts_size" id="s_y_large" value="s_y_large"/>
+                                <label for="s_small">Small</label>
+                                <input type="radio" name="shorts_size" id="s_small" value="s_small"/>
+                                <label for="s_medium">Medium</label>
+                                <input type="radio" name="shorts_size" id="s_medium" value="s_medium"/>
+                                <label for="s_large">Large</label>
+                                <input type="radio" name="shorts_size" id="s_large" value="s_large"/>
+                                <label for="s_x_large">Extra-Large</label>
+                                <input type="radio" name="shorts_size" id="s_x_large" value="s_x_large"/>
+                            </span>
                         </fieldset>
                         <button type="submit" class="btn btn-default">Submit</button>
                     </form>
                 </div>
             </div>
+            <footer>
+                <img src="/images/nysl_logo.png" class="text-center">
+            </footer>
+        </div>
+        <div id="page-message">
+            <h1 class="text-center">Post Your Messages Here</h1>
+            <form id="login-form" method="POST" action="" onsubmit="return false;">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" id="email" class="form-control" value="benjamin.glanz@gmx.de">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" class="form-control">
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="login-btn" class="btn btn-primary">Log In</button>
+                    <button type="submit" id="signup-btn" class="btn btn-default">Sign Up</button>
+                </div>
+            </form>
+            <form id="post-form" method="POST" action="" onsubmit="return false;">
+                <div class="form-group">
+                    <label for="note">Note:</label>
+                    <input type="text" name="note" id="note" class="form-control">
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="post-btn" class="btn btn-primary">Post</button>
+                    <button type="submit" id="logout-btn" class="btn btn-default">Log Out</button>
+                </div>
+            </form>
+            <div id="user-input"></div>
+            <div id="notes">
+                <ul id="postings">
+                </ul>
+            </div>
+        
+        <script type="text/html" id="post-template">
+            {{#notes}}
+            <li>{{author}}: {{text}}</li>
+            {{/notes}}
+        </script>
+        <footer>
+            <img src="/images/nysl_logo.png" class="text-center">
+        </footer>
         </div>
         <div id="page-contact">
+        <footer>
+            <img src="/images/nysl_logo.png" class="text-center">
+        </footer>
         </div>
     </div>
-    <footer>
-        <img src="/images/nysl_logo.png" class="text-center">
-    </footer>
+    <!-- <footer>
+    <img src="/images/nysl_logo.png" class="text-center">
+</footer> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js "></script>
     <script type="text/javascript" src="/bower_components/bootstrap-offcanvas/dist/js/bootstrap.offcanvas.min.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
-    <script>
-    // Initialize Firebase
-    var config = {
-        apiKey: "AIzaSyD9y9IWJ6baMhkKEZHsd470nZZVweklxB4",
-        authDomain: "nysl-game-schedule-web-app.firebaseapp.com",
-        databaseURL: "https://nysl-game-schedule-web-app.firebaseio.com",
-        projectId: "nysl-game-schedule-web-app",
-        storageBucket: "nysl-game-schedule-web-app.appspot.com",
-        messagingSenderId: "1009239633275"
-    };
-    firebase.initializeApp(config);
-    </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-messaging.js"></script>
+
     <script type="text/javascript" src="scripts/transitions.js"></script>
+    <script type="text/javascript" src="scripts/notes.js"></script>
 </body>
 
 </html>

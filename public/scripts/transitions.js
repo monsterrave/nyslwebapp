@@ -5,7 +5,7 @@ $(function() {
     });
      
     //page swaps by navbar
-    $("nav.navbar a").bind('click', function(e) {
+    $("nav.navbar a, #page-index .btn").bind('click', function(e) {
         /* console.log('clicked link')*/
         $("#js-bootstrap-offcanvas").trigger("offcanvas.close");
         e.preventDefault();
@@ -42,8 +42,8 @@ $(function() {
     //     $('#page-schedule').fadeIn(3000);
     // });
 
-    //ansatz for landscape mode?
+    /*//ansatz for landscape mode?
     if(window.innerWidth > window.innerHeight) {
            $('#page-schedule').css("background-color", "yellow");
-    }
+    }*/
 });
