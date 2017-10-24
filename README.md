@@ -3,6 +3,7 @@ mobile web app example <br>
 firebase web deployment <br>
 new features in HTML5, CSS3, and JavaScript to make the mobile web app look and feel like a native mobile application <br>
 responsive design that works for various screen sizes and rotations <br>
+single page application <br>
 Develop the User Interface Flow <br>
 UX Design <br>
 Mobile Design <br>
